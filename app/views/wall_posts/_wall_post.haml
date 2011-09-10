@@ -1,0 +1,22 @@
+= div_for wall_post do
+  - messanger = wall_post.commenter_user
+  .messangerinfo
+    %strong
+      = link_to full_name(messanger), wall_post_path(messanger.id)
+    wrote:
+  .wall-post-links
+    = link_to 'X', wall_post_path(wall_post), :method => :delete,:title=>"Remove", :class => "delete", :remote => true if @allow_delete || wall_post.commenter_user_id == current_user.id
+  .clear
+  .uimage
+    - unless messanger.profile.nil?
+      - if !messanger.profile.photo_file_name.nil? 
+        = image_tag(messanger.profile.photo.url(:thumb_nail),:class=>"", :size => '100x100')
+      - else
+        = image_tag("noimg_thumb.jpeg")
+  .wall-post-body
+    = wall_post.msg
+    .time-stamp
+      Posted 
+      =time_ago_in_words(wall_post.created_at)
+      ago
+  .clear

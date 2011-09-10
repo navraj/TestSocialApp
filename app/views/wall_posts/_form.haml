@@ -1,0 +1,8 @@
+.user_form
+  = form_tag(wall_posts_path, :remote => true, :id => 'wall_form') do
+    %fieldset
+      %legend
+        %span Write on Wall
+      = hidden_field_tag :user_id, user.id
+      = text_area :wall_post, :msg,:class=>"wall_post_txtarea"
+      = submit_tag('Post',:class=>"btn")

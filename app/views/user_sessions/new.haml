@@ -1,0 +1,16 @@
+- title "Log in"
+.left
+  .user_form
+    %fieldset
+      %legend
+        %span Login
+      = form_for @user_session do |f|
+        = render 'shared/errors', :obj => @user_session, :msg => false          
+        = f.label :email
+        = f.text_field :email
+        = f.label :password
+        = f.password_field :password
+        = f.submit('Log in',:class=>"btn")
+
+
+

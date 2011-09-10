@@ -1,0 +1,10 @@
+- if @profile.nil?
+  %h2
+    = "#{full_name(@user)} has not added his/her profile"
+- else
+  = render @profile, :user => @user
+.left
+  - unless @gray_user
+    = render 'wall_posts/form', :user => @user
+  #wall_msgs
+    = render @wall_posts

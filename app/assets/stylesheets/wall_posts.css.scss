@@ -1,0 +1,494 @@
+// Place all the styles related to the WallPosts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body{ margin:0;
+padding:0;
+  background:#000; 
+  
+}
+  
+#wrapper{
+   margin:0; 
+   padding:0;
+   background:#000; 
+  font-size:12px;
+  color:#fff;
+  
+  
+
+a {
+  color: #fff;
+  text-decoration:none;
+  &:visited {
+    color: #666; }
+  &:hover {
+    color: #fff; } }
+
+
+#notice {
+  color: green; }
+
+   #page_width{
+                background:#C2C2C2;
+                margin:0;
+                padding:0;
+                #content{
+                
+                
+                z-index:1;
+                
+                margin:0 auto;
+               
+                padding:1px;
+                  width:70%;
+                  background:#1A1A1A;
+                  min-height:400px;
+                
+                  #header{
+                      background:#1C1C1C;
+                      height:150px;
+                      #unused_area{
+                      float:left;
+                          background:#232323;
+                          border:solid 3px #404040;
+                          width:60%;
+                          height:120px;
+                          margin:15px;
+                          -moz-border-radius: 10px;
+border-radius: 10px;
+                          }
+                       #login_box{
+                       margin-right:20px;
+                       float:right;
+                       width:30%;
+                                              
+                       h2{
+                       font-size:1.6em;
+                       
+                       color:#A7207E;  
+                         text-align:left;
+                       a{color:#A7207E;
+                         
+                         }
+                       }
+                       text-align:right;
+                       input{background:#1C1C1C;
+                       border:solid 2px #1C1C1C;
+                       border-bottom:solid 2px #404040;
+                       color:#fff;
+                       margin-left:20px;
+                       
+                       }
+                       label{width:30px;}
+                       .fpass{
+                         color:#A7207E;
+                         font-size:11px;
+                         margin-top:10px;
+                         
+                       }
+                       .loginbtn {
+  width: auto;
+  
+  background: #000;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-box-shadow: 5px #999;
+  -webkit-box-shadow: 5px #999;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 110%;
+  padding: 5px 15px;
+}
+                         
+                       }
+                  }
+                 .profile_desc{
+                     background:#131313;
+                     min-height:260px;
+                     padding-top:10px;
+                     .profile_pic{
+                      width:350px;   
+                     float:left;
+                     text-align:center;
+                       background:#ECECEC;
+                       
+                       margin-left:-10px;
+                       .pic{
+                         padding:2px;
+                          }
+                       .pic_bottom{
+                          text-align:right;
+                          height:25px;
+                          background:#303030;
+                          padding:5px;
+                        }
+                     }
+                     .user_detail{
+                     color:#B9B9B9;
+                     float:right;
+                     width:59%;
+                     margin-left:20px;
+                       h2{
+                       color:#50D002;
+                         font-size:20px;
+                       }
+                       
+                       
+                     }
+                       
+                     }
+                     
+                 .user_menu
+                       {
+                       clear:both;
+                       text-align:right;
+                       margin-right:20px;
+                       a{color:#cacaca;
+                         font-weight:bold;
+                         margin:0 5px;
+                         padding:2px;
+                       }
+                         
+                       }
+  
+                                   
+                .left{
+                    width:70%;
+                    float:left;
+                    min-height:300px;
+                   
+                      h1,h2{
+                        color:#F5CD30;
+                        font-size:14px;
+                        font-weight:bold;
+                        padding:5px;
+                        }
+                        
+                        #wall_msgs{
+                      
+                        .wall_post{
+                       
+                        .uimage{
+                        
+                       float:left;
+                        padding:2px;
+                         width:100px;
+                         text-align:center;
+                         height:85px;
+                         img{
+                         
+                         height:75px;
+                           
+                         }
+                        }
+                        
+                        background:#fafafa;
+                      color:#000;
+                        padding:5px;
+                        margin:5px;
+                          clear:both;
+                           border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+                            a{color:#000;}    
+                          .messangerinfo{
+                            
+                          float:left; 
+                          margin-right:155px; 
+                            
+                            
+                          }
+                          .wall-post-links{
+                          text-align:right;
+                          float:right;
+                            width:150px;
+                            .delete{
+                            color:#fff;
+                              background:#000;
+                              padding:2px 3px;
+                            }
+                          }
+                          .wall-post-body{
+                          margin-left:100px;
+                          padding:5px;
+                          }
+                        
+                          .time-stamp{
+                          
+                            font-size:80%;
+                            
+                          }
+                          
+                        }
+                        }
+                     .news_item{
+                    color:#A0A0A0;
+                    .item_date{
+                    color:#000;
+                     margin-left:-15px;
+                     background:#FFCA01;
+                     width:40px;
+                     float:left;
+                     font-size:16px;
+                     padding:2px;
+                       
+                     }
+                     .item_content{
+                    
+                     float:left;
+                     width:80%;
+                     margin-left:20px;
+                     h3{ margin:0;padding:0;}   
+                     }
+                       
+                     }
+  
+                    }
+                
+                .right{
+                  width:28%;
+                  float:right;
+                  
+                  text-align:left;
+                  h1,h2{
+                    color:#F5CD30;
+                    font-size:13px;
+                    padding:5px;
+                  }
+                  ul{
+                  list-style:none;
+                  margin:0;
+                  padding:0;
+                  li{
+                    
+                    margin:4px 0;
+                    padding:0;
+                    }                    
+                  }
+                }
+                
+               position:relative;
+               z-index:1;
+               border-bottom-right-radius:10px; 	
+              -moz-border-radius-bottomright:10px;
+               border-bottom-left-radius:10px;
+              -moz-border-radius-bottomleft:10px;
+             
+             
+   .user_form{
+   margin:10px;
+   
+   .field_with_errors {
+   }
+
+.wall_post_txtarea{
+width:400px;
+height:60px;
+   border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+ 
+  
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid #E84067;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+ 
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: 0px;
+    background: #E84067;
+    color: #000; }
+   }
+    
+  ul {
+    font-size: 12px;
+    list-style: disc;
+   margin:0;
+   padding:10px;
+   
+   li {
+   margin:2px 10px;
+    color:#E84067;
+     }
+  }
+
+   
+   
+             
+             fieldset {
+  margin: 25px 0 10px 0px;
+  overflow: hidden;
+  width: auto;
+  background: #fafafa;
+  border: 0px;
+  padding: 0 20px 20px 20px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+legend {
+  padding: 10px 5px 25px;
+  background: #efefef;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background: #fafafa;
+span {
+  font-size: 100%;
+  font-weight: bold;
+  color: #fff;
+  background: #444;
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  padding: 5px 5px 2px 5px;
+}
+}
+
+             
+              form {
+  font-family: arial;
+  font-size: 100%;
+  color: #666;
+label {
+  display: block;
+  margin: 3px 0;
+  clear: both;
+ span {
+  color: #ff0000;
+  font-size: 85%;
+}
+  
+}
+input {
+  color: #666;
+  margin: 0 0 7px 0;
+  border: 1px solid #d8d8d8;
+  width: 220px;
+  float: left;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  background: #efefef;
+  padding: 3px 10px;
+}
+select {
+  color: #666;
+  margin: 0 0 7px 0;
+  border: 1px solid #d8d8d8;
+  width: 240px;
+  float: left;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  background: #efefef;
+  padding: 3px 5px 3px 10px;
+}
+option {
+  display: block;
+  color: #666;
+}
+input[type="checkbox"] {
+  background: none;
+  border: 0px;
+  width: 14px;
+  height: 14px;
+  margin: 5px 15px;
+  padding: 0px;
+}
+input[type="radio"] {
+  background: none;
+  border: 0px;
+  width: 14px;
+  height: 14px;
+  margin: 5px 15px;
+  padding: 0px;
+}
+textarea {
+  color: #666;
+  margin: 0 0 7px 0;
+  border: 1px solid #d8d8d8;
+  width: 300px;
+  float: left;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  background: #efefef;
+  padding: 3px 10px;
+  
+}
+}
+ .error_msg {
+  color: #ff0000;
+  font-size: 85%;
+}
+.btn {
+  width: auto;
+  clear: both;
+  background: #000;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-box-shadow: 5px #999;
+  -webkit-box-shadow: 5px #999;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  margin-top: 15px;
+  float: left;
+  font-weight: bold;
+  font-size: 110%;
+  padding: 5px 15px;
+}}
+
+.footericons {
+  height: 15px;
+  background: #000;
+  text-align: right;
+  padding-right: 50px;
+  border-bottom-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
+.fbicon {
+  float: right;
+  height: 30px;
+  width: 30px;
+  background: url("facebookicon.png") no-repeat;
+  display: block;
+  margin: 0 5px;
+}
+.twiticon {
+  float: right;
+  height: 30px;
+  width: 30px;
+  background: url("twittericon.png") no-repeat;
+  display: block;
+  margin: 0 5px;
+}
+}
+
+
+                }
+                
+                #footer{
+                
+                margin-top:-20px;
+                          background:#7E7E7E;
+                          height:100px;   
+                          z-index:0; 
+                        }
+             }
+      .clear{clear:both;}
+           
+ }

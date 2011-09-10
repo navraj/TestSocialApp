@@ -1,0 +1,7 @@
+one:
+  tag_line: MyString
+  description: MyText
+
+two:
+  tag_line: MyString
+  description: MyText

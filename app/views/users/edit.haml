@@ -1,0 +1,13 @@
+= title "Edit User"
+.left
+  .user_form
+    %fieldset
+      %legend 
+        %span Edit User
+      = form_for @user do |f|
+        = render 'shared/errors', :obj => @user, :msg => 'prohibited this user from updating password:'
+        = f.label :password
+        = f.password_field :password
+        = f.label :password_confirmation
+        = f.password_field :password_confirmation
+        = f.submit('Update',:class=>"btn")

@@ -1,0 +1,52 @@
+!!! Strict
+%html
+  %head
+    %title Webdevtest
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tags 
+  %body
+    #wrapper
+      #page_width
+        #content
+          #header
+            #unused_area
+            #login_box
+              - if !current_user 
+                %h2 
+                  = link_to_unless_current 'Login', login_path 
+                  \/                
+                  = link_to_unless_current 'Register', new_user_path 
+                  = image_tag("rightarrow.png",:height=>"16" ,:border=>0)
+                %form{:action => "user_sessions", :method => "post"}
+                  %label EMAIL 
+                  %input{:type => "text", :name => "user_session[email]", :size => "15"}
+                  %label PASSWORD
+                  %input{:type => "text", :name => "user_session[password]", :size => "15"}
+                  %a{:href => 'javascript:void(0);', :class => 'fpass'}
+                    Forget password?
+                  %input{:type => "submit", :name => 'login', :value => "Log in", :class => "loginbtn"}
+          .user_menu
+            - if current_user 
+              - if current_user.profile
+                = link_to_unless_current "Edit Profile(#{full_name(current_user)})", edit_profile_path(:current_user)
+              - else 
+                = link_to_unless_current 'Add Profile', new_profile_path
+              = link_to_unless_current 'Change Password', edit_user_path(:current) 
+              = link_to_unless_current 'Logout', logout_path 
+          #main-content
+            = yield
+            .right
+              - if current_user
+                %h2 User List
+                %ul
+                  = recent_user_list        
+          .clear
+          .footericons
+            Find us on 
+            %a{:href => "javascript:void(0);"}
+              %span{:class => "twiticon"}
+            %a{:href => "javascript:void(0);"}
+              %span{:class => "fbicon"}
+            .clear
+      #footer

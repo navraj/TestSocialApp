@@ -1,0 +1,16 @@
+.profile_desc
+  .profile_pic
+    .pic
+      - if !profile.photo_file_name.nil? 
+        = image_tag profile.photo.url(:large)
+      - else
+        = image_tag("noimg_large.jpeg")
+    .pic_bottom
+      = "#{user.town},#{user.country}"
+  .user_detail
+    %h2
+      = full_name(user)
+    %strong>
+      = profile.tag_line
+    %p
+      = profile.description
